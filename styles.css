@@ -1,32 +1,19 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --color-white: hsl(0, 100%, 100%);
   --color-black: hsl(0, 0%, 0%);
-  --color-navy-950: hsl(224, 30%, 27%);
-  --color-navy-200: hsl(241, 100%, 89%);
-  --color-navy-50: hsl(221, 100%, 96%);
-  --color-blue-800: hsl(234, 85%, 45%);
-  --color-blue-50: hsl(234, 71%, 97%);
-  --color-yellow-400: hsl(39, 100%, 56%);
-  --color-yellow-50: hsl(38, 100%, 98%);
-  --color-red-400: hsl(0, 100%, 67%);
-  --color-red-50: hsl(0, 100%, 98%);
-  --color-green-500: hsl(166, 100%, 37%);
-  --color-green-50: hsl(162, 63%, 97%);
-  --color-gradient-1-start: #4d21c9;
-  --color-gradient-1-end: #2521c9;
-  --color-gradient-2-start: #7755ff;
-  --color-gradient-2-end: #2f2ce9;
-  --text-preset1: 800 72px/100% "Hanken Grotesk", sans-serif;
-  --text-preset2: 800 56px/100% "Hanken Grotesk", sans-serif;
-  --text-preset3: 700 32px/130% "Hanken Grotesk", sans-serif;
-  --text-preset4: 700 24px/130% "Hanken Grotesk", sans-serif;
-  --text-preset5: 700 18px/130% "Hanken Grotesk", sans-serif;
-  --text-preset5-500: 500 18px/130% "Hanken Grotesk", sans-serif;
-  --text-preset6: 700 16px/130% "Hanken Grotesk", sans-serif;
-  --text-preset6-500: 500 16px/130% "Hanken Grotesk", sans-serif;
+  --color-grey-900: hsl(217, 19%, 35%);
+  --color-grey-500: hsl(214, 17%, 51%);
+  --color-grey-400: hsl(212, 23%, 69%);
+  --color-grey-200: hsl(210, 46%, 95%);
+  --text-preset1: 700 20px/130% "Manrope", sans-serif;
+  --text-preset2: 500 13px/140% "Manrope", sans-serif;
+  --text-preset2-bold: 700 13px/140% "Manrope", sans-serif;
+  --text-preset3: 700 13px/140% "Manrope", sans-serif;
+  --text-preset1-spacing: 0.25px;
+  --text-preset2-spacing: 0.12%;
+  --text-preset3-spacing: 25%;
   --spacing-50: 0.25rem; /* 4px */
   --spacing-100: 0.5rem; /* 8px */
   --spacing-150: 0.75rem; /* 12px */
@@ -45,7 +32,7 @@
 
 html,
 body {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Manrope", sans-serif;
   letter-spacing: 0px;
   background-color: var(--color-white);
 }
@@ -64,16 +51,101 @@ body {
 }
 
 body {
-  background-color: var(--color-blue-50);
+  background-color: var(--color-grey-200);
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 375px;
-  /* 这里如果不设置，就会收缩成 .result的宽度 */
-  width: 100%;
+  width: 327px;
+  gap: 32px;
+  border-radius: 10px;
+  overflow: hidden;
   background-color: var(--color-white);
-  padding-bottom: 30px;
+  padding-bottom: 18px;
+}
+main img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 267px;
+}
+main .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+main .container .content .title {
+  font: var(--text-preset1);
+  letter-spacing: var(--text-preset1-spacing);
+  color: var(--color-grey-900);
+}
+main .container .content .subtitle {
+  font: var(--text-preset2);
+  letter-spacing: var(--text-preset2-spacing);
+  color: var(--color-grey-500);
+}
+main .container .profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .profile .left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+main .container .profile .left img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main .container .profile .left .profile__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .container .profile .left .profile__text .name {
+  font: var(--text-preset2-bold);
+  letter-spacing: var(--text-preset2-spacing);
+  color: var(--color-grey-900);
+}
+main .container .profile .left .profile__text .date {
+  font: var(--text-preset2);
+  letter-spacing: var(--text-preset2-spacing);
+  color: var(--color-grey-400);
+}
+main .container .profile .share {
+  border: none;
+  padding: 0;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ecf2f8;
+}
+main .container .profile .share img {
+  width: 15px;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
 }/*# sourceMappingURL=styles.css.map */
