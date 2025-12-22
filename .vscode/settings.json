@@ -1,0 +1,31 @@
+{
+  // ========== GitHub Copilot ==========
+  "github.copilot.enable": {
+    "*": false,               // 关闭所有语言的 Copilot 自动提示
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.inlineSuggest.enable": false, // 关闭行内自动补全
+  "github.copilot.suggestionDisplay": "none",   // 不显示建议面板
+
+  // ========== ChatGPT 官方插件 (ChatGPT - OpenAI extension) ==========
+  "chatgpt.inlineSuggestions.enabled": false,    // 关闭内联提示
+  "chatgpt.autoSend": false,                     // 不自动发出请求
+  "chatgpt.inlineCompletion.enabled": false,     // 禁止自动补全
+  "chatgpt.automaticallyTriggerInlineCompletions": false,
+
+  // ========== Continue 插件 ==========
+  "continue.inlineCompletions.enabled": false,   // 关闭行内 AI 提示
+  "continue.suggestions.enabled": false,
+
+  // ========== CodeGPT 插件 ==========
+  "codegpt.inlineCompletions.enabled": false,    // 禁止内联补全
+  "codegpt.suggestions.enabled": false,
+  "codegpt.inlineSuggestions.enabled": false,
+
+  // ========== Sourcegraph Cody ==========
+  "cody.inlineCompletions.enabled": false,
+  "cody.autocomplete.enabled": false,
+
+}

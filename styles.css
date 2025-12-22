@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-navy-950: hsl(224, 30%, 27%);
+  --color-navy-200: hsl(241, 100%, 89%);
+  --color-navy-50: hsl(221, 100%, 96%);
+  --color-blue-800: hsl(234, 85%, 45%);
+  --color-blue-50: hsl(234, 71%, 97%);
+  --color-yellow-400: hsl(39, 100%, 56%);
+  --color-yellow-50: hsl(38, 100%, 98%);
+  --color-red-400: hsl(0, 100%, 67%);
+  --color-red-50: hsl(0, 100%, 98%);
+  --color-green-500: hsl(166, 100%, 37%);
+  --color-green-50: hsl(162, 63%, 97%);
+  --color-gradient-1-start: #4d21c9;
+  --color-gradient-1-end: #2521c9;
+  --color-gradient-2-start: #7755ff;
+  --color-gradient-2-end: #2f2ce9;
+  --text-preset1: 800 72px/100% "Hanken Grotesk", sans-serif;
+  --text-preset2: 800 56px/100% "Hanken Grotesk", sans-serif;
+  --text-preset3: 700 32px/130% "Hanken Grotesk", sans-serif;
+  --text-preset4: 700 24px/130% "Hanken Grotesk", sans-serif;
+  --text-preset5: 700 18px/130% "Hanken Grotesk", sans-serif;
+  --text-preset5-500: 500 18px/130% "Hanken Grotesk", sans-serif;
+  --text-preset6: 700 16px/130% "Hanken Grotesk", sans-serif;
+  --text-preset6-500: 500 16px/130% "Hanken Grotesk", sans-serif;
+  --spacing-50: 0.25rem; /* 4px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-600: 3rem; /* 48px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-900: 4.5rem; /* 72px */
+  --spacing-1000: 5rem; /* 80px */
+  --spacing-1400: 7rem; /* 112px */
+  --spacing-1600: 8rem; /* 128px */
+}
+
+html,
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  letter-spacing: 0px;
+  background-color: var(--color-white);
+}
+
+body {
+  /* 如果不开启特定的抗锯齿设置，字体往往会显得略微发虚、变粗，视觉上就会觉得“宽”了 */
+  /* 针对 Chrome, Safari (Mac) */
+  -webkit-font-smoothing: antialiased;
+  /* 针对 Firefox (Mac) */
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  /* 这个强制居中不要用 */
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--color-blue-50);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 375px;
+  /* 这里如果不设置，就会收缩成 .result的宽度 */
+  width: 100%;
+  background-color: var(--color-white);
+  padding-bottom: 30px;
+}/*# sourceMappingURL=styles.css.map */
