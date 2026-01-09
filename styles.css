@@ -78,7 +78,6 @@ main .container {
   align-items: center;
   gap: 48px;
   width: 267px;
-  position: relative;
 }
 main .container .content {
   display: flex;
@@ -101,6 +100,7 @@ main .container .profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 main .container .profile .left {
   display: flex;
@@ -131,7 +131,55 @@ main .container .profile .left .profile__text .date {
   color: var(--color-grey-400);
 }
 main .container .profile .share-panel {
+  position: absolute;
   display: none;
+  padding: 16px 32px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-grey-900);
+  /* 核心布局：打破父容器宽度限制 */
+  left: -30px; /* (327px - 267px) / 2 = 30px，向左拉伸 */
+  bottom: -20px; /* 抵消 main 的 padding-bottom (大致值，根据你的padding调整) */
+  width: 327px; /* 强制宽度与 main 一致 */
+  height: 76px; /* 题目要求的高度 */
+}
+main .container .profile .share-panel .share-panel-left {
+  display: flex;
+  gap: 24px;
+}
+main .container .profile .share-panel .share-panel-left .share-text {
+  font: var(--text-preset3);
+  letter-spacing: var(--text-preset3-spacing);
+  color: var(--color-grey-400);
+}
+main .container .profile .share-panel .share-panel-left .icons {
+  display: flex;
+  gap: 16px;
+}
+main .container .profile .share-panel .share-panel-left .icons img {
+  width: 20px;
+  height: 20px;
+}
+main .container .profile .share-panel .active-share {
+  border: none;
+  padding: 0;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-grey-500);
+  color: var(--color-white);
+}
+main .container .profile .share-panel .active-share img {
+  width: 15px;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
 }
 main .container .profile .share {
   border: none;
