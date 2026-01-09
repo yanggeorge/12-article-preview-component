@@ -175,7 +175,7 @@ main {
           }
         }
 
-        .active-share {
+        .share-active-btn {
           border: none;
           padding: 0;
           background: none;
@@ -197,6 +197,11 @@ main {
         }
       }
 
+      &.active {
+        .share-panel {
+          display: flex;
+        }
+      }
       .share {
         border: none;
         padding: 0;

@@ -160,7 +160,7 @@ main .container .profile .share-panel .share-panel-left .icons img {
   width: 20px;
   height: 20px;
 }
-main .container .profile .share-panel .active-share {
+main .container .profile .share-panel .share-active-btn {
   border: none;
   padding: 0;
   background: none;
@@ -174,12 +174,15 @@ main .container .profile .share-panel .active-share {
   background-color: var(--color-grey-500);
   color: var(--color-white);
 }
-main .container .profile .share-panel .active-share img {
+main .container .profile .share-panel .share-active-btn img {
   width: 15px;
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 50%;
+}
+main .container .profile.active .share-panel {
+  display: flex;
 }
 main .container .profile .share {
   border: none;
