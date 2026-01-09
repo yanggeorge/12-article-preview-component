@@ -12,8 +12,8 @@
   --text-preset2-bold: 700 13px/140% "Manrope", sans-serif;
   --text-preset3: 700 13px/140% "Manrope", sans-serif;
   --text-preset1-spacing: 0.25px;
-  --text-preset2-spacing: 0.12%;
-  --text-preset3-spacing: 25%;
+  --text-preset2-spacing: 0.12px;
+  --text-preset3-spacing: 0.25em;
   --spacing-50: 0.25rem; /* 4px */
   --spacing-100: 0.5rem; /* 8px */
   --spacing-150: 0.75rem; /* 12px */
@@ -78,6 +78,7 @@ main .container {
   align-items: center;
   gap: 48px;
   width: 267px;
+  position: relative;
 }
 main .container .content {
   display: flex;
@@ -128,6 +129,9 @@ main .container .profile .left .profile__text .date {
   font: var(--text-preset2);
   letter-spacing: var(--text-preset2-spacing);
   color: var(--color-grey-400);
+}
+main .container .profile .share-panel {
+  display: none;
 }
 main .container .profile .share {
   border: none;
