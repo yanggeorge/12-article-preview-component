@@ -180,6 +180,7 @@ main .container .profile .share-panel .share-active-btn {
 }
 main .container .profile .share-panel .share-active-btn img {
   width: 15px;
+  height: 15px;
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
@@ -203,6 +204,7 @@ main .container .profile .share {
 }
 main .container .profile .share img {
   width: 15px;
+  height: 15px;
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
