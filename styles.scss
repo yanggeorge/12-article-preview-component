@@ -142,17 +142,21 @@ main {
       .share-panel {
         position: absolute;
         display: none;
-        padding: 16px 32px;
+        padding: 0px 30px;
         justify-content: space-between;
         align-items: center;
         background-color: var(--color-grey-900);
 
         /* 核心布局：打破父容器宽度限制 */
         left: -30px; /* (327px - 267px) / 2 = 30px，向左拉伸 */
-        bottom: -20px; /* 抵消 main 的 padding-bottom (大致值，根据你的padding调整) */
+        bottom: -18px; /* 抵消 main 的 padding-bottom (大致值，根据你的padding调整) */
 
         width: 327px; /* 强制宽度与 main 一致 */
         height: 76px; /* 题目要求的高度 */
+        /* 保持圆角 */
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        z-index: 2;
 
         .share-panel-left {
           display: flex;
