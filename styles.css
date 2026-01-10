@@ -64,6 +64,7 @@ main {
   overflow: hidden;
   background-color: var(--color-white);
   padding-bottom: 18px;
+  position: relative;
 }
 main img {
   width: 100%;
@@ -100,7 +101,6 @@ main .container .profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 main .container .profile .left {
   display: flex;
@@ -133,14 +133,13 @@ main .container .profile .left .profile__text .date {
 main .container .profile .share-panel {
   position: absolute;
   display: none;
-  padding: 0px 30px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-grey-900);
-  /* 核心布局：打破父容器宽度限制 */
-  left: -30px; /* (327px - 267px) / 2 = 30px，向左拉伸 */
-  bottom: -18px; /* 抵消 main 的 padding-bottom (大致值，根据你的padding调整) */
-  width: 327px; /* 强制宽度与 main 一致 */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 30px;
   height: 76px; /* 题目要求的高度 */
   /* 保持圆角 */
   border-bottom-left-radius: 10px;
