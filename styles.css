@@ -61,17 +61,18 @@ main {
   width: 327px;
   gap: 32px;
   border-radius: 10px;
-  overflow: hidden;
   background-color: var(--color-white);
   padding-bottom: 18px;
   position: relative;
 }
-main img {
+main .header-image {
   width: 100%;
   height: 200px;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 main .container {
   display: flex;
@@ -217,9 +218,11 @@ main .container .profile .share img {
     padding-bottom: 0px;
     padding-right: 36px;
   }
-  main img {
+  main .header-image {
     width: 229px;
     height: 346px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
   }
   main .container {
     gap: 24px;
@@ -235,5 +238,15 @@ main .container .profile .share img {
   }
   main .container .profile .share-panel .share-active-btn {
     display: none;
+  }
+  main .container .profile .share-panel::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 12px 12px 0px;
+    border-style: solid;
+    border-color: var(--color-grey-900) transparent transparent transparent;
   }
 }/*# sourceMappingURL=styles.css.map */
