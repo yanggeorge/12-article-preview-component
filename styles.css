@@ -208,4 +208,32 @@ main .container .profile .share img {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    width: auto;
+    padding-bottom: 0px;
+    padding-right: 36px;
+  }
+  main img {
+    width: 229px;
+    height: 346px;
+  }
+  main .container {
+    gap: 24px;
+    width: 311px;
+    position: relative;
+  }
+  main .container .profile .share-panel {
+    height: 56px;
+    border-radius: 10px;
+    left: auto;
+    right: -100px;
+    bottom: 60px;
+  }
+  main .container .profile .share-panel .share-active-btn {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

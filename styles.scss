@@ -228,3 +228,37 @@ main {
     }
   }
 }
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    width: auto;
+    padding-bottom: 0px;
+    padding-right: 36px;
+
+    img {
+      width: 229px;
+      height: 346px;
+    }
+
+    .container {
+      gap: 24px;
+      width: 311px;
+      position: relative;
+
+      .profile {
+        .share-panel {
+          height: 56px;
+          border-radius: 10px;
+          left: auto;
+          right: -100px;
+          bottom: 60px;
+
+          .share-active-btn {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

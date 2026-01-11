@@ -9,7 +9,11 @@ const profile = document.querySelector(".profile");
 shareBtn.addEventListener("click", (e) => {
   e.stopPropagation(); // 防止冒泡
   console.log("share btn");
-  profile.classList.add("active");
+  if (profile.classList.contains("active")) {
+    profile.classList.remove("active");
+  } else {
+    profile.classList.add("active");
+  }
 });
 
 // 2. 点击面板内的黑色按钮：隐藏面板
