@@ -254,8 +254,10 @@ main {
           height: 56px;
           border-radius: 10px;
           left: auto;
-          right: -100px;
-          bottom: 60px;
+          right: 16px;
+          transform: translateX(50%);
+          bottom: 56px;
+          padding: 0 38px;
 
           .share-active-btn {
             display: none;
@@ -264,7 +266,7 @@ main {
           &::after {
             content: "";
             position: absolute;
-            bottom: -10px;
+            bottom: -12px;
             left: 50%;
             transform: translateX(-50%);
 

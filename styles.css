@@ -233,8 +233,10 @@ main .container .profile .share img {
     height: 56px;
     border-radius: 10px;
     left: auto;
-    right: -100px;
-    bottom: 60px;
+    right: 16px;
+    transform: translateX(50%);
+    bottom: 56px;
+    padding: 0 38px;
   }
   main .container .profile .share-panel .share-active-btn {
     display: none;
@@ -242,7 +244,7 @@ main .container .profile .share img {
   main .container .profile .share-panel::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
     border-width: 12px 12px 0px;
